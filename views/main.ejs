@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar | Main</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/main.js" defer></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.1/index.global.min.js'></script>
+</head>
+<body>
+    <h1>Welcome, <%=locals.username %>!</h1>
+    <a href="../login">logout</a>
+    <div class="wrapper">
+      <div id='calendar'></div>
+      <div class="new-event vertical">
+        <h1>Add New Event</h1>
+        <div class="vertical">
+          <label for="title">Title:</label>
+          <input name ="title" type="text" id="title">
+        </div>
+        
+        
+        <div>
+          <label for="date">Start Date:</label>
+          <input name ="date" type="date" id ="startDate">
+        </div>
+        <div class="new-event " id="toggle">
+          <div>
+            <label for="time">Start Time:</label>
+            <input name ="time" type="time" id ="startTime">
+          </div>
+          <div>
+            <label for="date">End Date:</label>
+            <input name ="date" type="date" id ="endDate">
+          </div>
+          
+          <div>
+            <label for="time">End Time:</label>
+            <input name ="time" type="time" id ="endTime">
+          </div>
+        </div>
+        <div>
+          <label for="allDay">All Day Event:</label>
+          <input name ="allDay" type="checkbox" id ="allDay">
+        </div>
+        <div>
+          <label for="time">Description:</label>
+          <textarea name="description" id="description" cols="10" rows="10"></textarea>
+        </div>
+        <!-- <label for="repeat"></label>
+        <input name="repeat" type="checkbox"> -->
+        <button id="add">Add</button>
+      </div>
+    </div>
+</body>
+</html>

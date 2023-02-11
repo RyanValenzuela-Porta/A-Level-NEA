@@ -1,0 +1,1 @@
+module.exports = ([{id:"0",username:"admin",password:"adminpass"}])
